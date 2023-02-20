@@ -10,22 +10,38 @@
       href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Climbing-project</title>
     <style>
       body {
         font-family: "Hind Madurai", sans-serif;
         text-align: center;
-        background: linear-gradient(
-          178deg,
-          rgb(209, 229, 197) 0%,
-          rgb(216, 209, 237) 100%
+        background-color: #ffffff;
+        opacity: 1;
+        background-size: 8px 8px;
+        background-image: repeating-linear-gradient(
+          45deg,
+          #fffa82 0,
+          #fffa82 0.8px,
+          #ffffff 0,
+          #ffffff 50%
         );
       }
       .content {
         max-width: 700px;
-        background-color: white;
+        background: radial-gradient(
+          rgb(255, 250, 130) 0%,
+          rgb(255, 255, 255) 100%
+        );
+
         margin: 30px auto;
+        border: 4px solid black;
         border-radius: 30px;
         padding: 20px 20px;
       }
@@ -33,68 +49,79 @@
         margin-top: 20px;
         padding: 10px 10px;
         border-radius: 30px;
-        border: 1px solid black;
-        background: rgb(216, 209, 237);
+        border: 3px solid black;
+        background: white;
+        font-size: 20px;
         box-shadow: 0px 0px 33px 10px rgba(255, 255, 255, 0.7);
+        transition: all 200ms ease-in-out;
       }
       .theme-button:hover {
         cursor: pointer;
+        background: black;
+        color: white;
       }
-      .gallery {
-        margin: 0px 0px 100px 0px;
-      }
+
       h1 {
         font-size: 50px;
+        font-family: "Josefin Sans", sans-serif;
       }
       h2 {
         font-style: italic;
+        opacity: 90%;
       }
       p {
         text-align: justify;
         font-size: 20px;
         padding: 0px 30px;
         line-height: 40px;
-        color: #5a499b;
         margin-top: 30px;
+        opacity: 90%;
+        font-weight: bolder;
       }
       .check-out-button {
         margin: 20px 0px;
         padding: 20px 20px;
         border-radius: 30px;
-        border: 1px solid black;
-        background: rgb(209, 229, 197);
+        border: 3px solid black;
+        background: white;
+        font-size: 20px;
+        box-shadow: 0px 0px 33px 10px rgba(255, 255, 255, 0.7);
+        transition: all 200ms ease-in-out;
       }
       .check-out-button a {
         color: black;
         text-decoration: none;
         font-size: 20px;
+        transition: all 200ms ease-in-out;
+        padding: 20px;
       }
-      footer,
-      .coded {
+
+      .check-out-button a:hover {
+        color: #ba10db;
+      }
+      footer {
         margin: 20px 0px;
         font-style: italic;
         font-size: 17px;
         line-height: 30px;
       }
-      footer a,
-      .coded a {
+      footer a {
         text-decoration: none;
-        color: #5a499b;
+        color: #ba10db;
       }
-      .coded {
-        margin-bottom: 50px;
-      }
+
       img {
         transition: all 250ms ease-in-out;
         border-radius: 20px;
+        border: 2px solid black;
       }
       .small-img:hover {
         transform: scale(1.7);
-        border: 1px solid black;
+        border: 2px solid #ba10db;
       }
       .big-img:hover {
         transform: scale(1.4);
-        border: 1px solid black;
+        border: 2px solid #ba10db;
       }
       .first-image {
         width: 630px;
@@ -102,7 +129,7 @@
       }
       .first-image:hover {
         transform: scale(1.1);
-        border: 1px solid black;
+        border: 2px solid #ba10db;
       }
       .gallery {
         display: grid;
@@ -113,6 +140,7 @@
       .gallery img {
         width: 100%;
       }
+      .dark;
     </style>
   </head>
   <body>
@@ -155,19 +183,17 @@
         >
         and <a href="https://unsplash.com/" target="_blank">Unsplash</a>.
         <br />
+        This page was coded by
+        <a
+          href="https://app.netlify.com/sites/cool-entremet-69e2c9/overview"
+          target="_blank"
+          >Sarolta Hegyi
+        </a>
+        and has open source code on
+        <a href="https://github.com/saroltah/Climbing-project" target="_blank"
+          >GitHub</a
+        >.
       </footer>
-    </div>
-    <div class="coded">
-      This page was coded by
-      <a
-        href="https://app.netlify.com/sites/cool-entremet-69e2c9/overview"
-        target="_blank"
-        >Sarolta Hegyi
-      </a>
-      and has open source code on
-      <a href="https://github.com/saroltah/Climbing-project" target="_blank"
-        >GitHub</a
-      >.
     </div>
   </body>
 </html>
