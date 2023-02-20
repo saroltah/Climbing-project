@@ -52,7 +52,7 @@
         border: 3px solid black;
         background: white;
         font-size: 20px;
-        box-shadow: 0px 0px 33px 10px rgba(255, 255, 255, 0.7);
+        box-shadow: 0px 0px 33px 10px rgba(0, 0, 0, 0.7);
         transition: all 200ms ease-in-out;
       }
       .theme-button:hover {
@@ -85,7 +85,7 @@
         border: 3px solid black;
         background: white;
         font-size: 20px;
-        box-shadow: 0px 0px 33px 10px rgba(255, 255, 255, 0.7);
+        box-shadow: 0px 0px 33px 10px rgba(0, 0, 0, 0.7);
         transition: all 200ms ease-in-out;
       }
       .check-out-button a {
@@ -124,7 +124,7 @@
         border: 2px solid #ba10db;
       }
       .first-image {
-        width: 630px;
+        width: 91%;
         margin-top: 40px;
       }
       .first-image:hover {
@@ -140,7 +140,49 @@
       .gallery img {
         width: 100%;
       }
-      .dark;
+      .dark {
+        background-color: #000;
+        opacity: 1;
+        background-size: 7px 7px;
+        background-image: repeating-linear-gradient(
+          45deg,
+          #600872 0,
+          #600872 0.7000000000000001px,
+          #000 0,
+          #000 50%
+        );
+      }
+      .dark .content {
+        color: white;
+        background: radial-gradient(#550765 0%, black 100%);
+
+        border: 4px solid white;
+      }
+      .dark .theme-button {
+        border: 3px solid white;
+        background: black;
+        color: white;
+
+        box-shadow: 0px 0px 33px 10px rgba(255, 255, 255, 0.7);
+      }
+      .dark .theme-button:hover {
+        background: white;
+        color: black;
+      }
+
+      .dark .check-out-button {
+        border: 3px solid white;
+        background: black;
+
+        box-shadow: 0px 0px 33px 10px rgba(255, 255, 255, 0.7);
+      }
+      .dark .check-out-button a {
+        color: white;
+      }
+
+      .dark img {
+        border: 2px solid white;
+      }
     </style>
   </head>
   <body>
@@ -195,5 +237,13 @@
         >.
       </footer>
     </div>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        body.classList.add("dark");
+      }
+      let button = document.querySelector(".theme-button");
+      button.addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>
