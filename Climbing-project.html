@@ -4,38 +4,137 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Climbing-project</title>
     <style>
-        img{width:300px}
+      img {
+        width: 300px;
+      }
+      body {
+        font-family: "Hind Madurai", sans-serif;
+        text-align: center;
+        background: linear-gradient(
+          178deg,
+          rgb(209, 229, 197) 0%,
+          rgb(216, 209, 237) 100%
+        );
+      }
+      .content {
+        max-width: 700px;
+        background-color: white;
+        margin: 30px auto;
+        border-radius: 30px;
+        padding: 20px 20px;
+      }
+      .theme-button {
+        margin-top: 20px;
+        padding: 10px 10px;
+        border-radius: 30px;
+        border: 1px solid black;
+        background: rgb(216, 209, 237);
+        box-shadow: 0px 0px 33px 10px rgba(255, 255, 255, 0.7);
+      }
+      .gallery {
+        margin: 100px 0px;
+      }
+      h2 {
+        font-style: italic;
+      }
+      p {
+        text-align: justify;
+        font-size: 20px;
+        padding: 0px 30px;
+        line-height: 40px;
+        color: #5a499b;
+      }
+      .check-out-button {
+        margin: 20px 0px;
+        padding: 20px 20px;
+        border-radius: 30px;
+        border: 1px solid black;
+        background: rgb(209, 229, 197);
+      }
+      .check-out-button a {
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+      }
+      footer,
+      .coded {
+        margin: 20px 0px;
+        font-style: italic;
+        font-size: 17px;
+        line-height: 30px;
+      }
+      footer a,
+      .coded a {
+        text-decoration: none;
+        color: #5a499b;
+      }
+      .coded {
+        margin-bottom: 50px;
+      }
     </style>
   </head>
   <body>
-    <button>Change theme</button>
-    <h1>Indoor climbing</h1>
-    <h2>The most enjoyable and efficient sport</h2>
-    <img src="src/climbing1.jpg" alt="">
- <img src="src/climbing2.jpg" alt="">
- <img src="src/climbing3.jpg" alt="">   
- <img src="src/climbing4.jpg" alt="">
- <img src="src/climbing5.jpg" alt="">
- <img src="src/climbing6.jpg" alt="">
- <p>
-      As an exercise, you really can’t do better than climbing. Indoor climbing
-      will improve all aspects of your physical condition. You will see
-      improvement in your balance, flexibility, and agility and develop both
-      upper and lower body strength. Best of all, you will burn calories at a
-      higher rate than most strenuous workouts and will do it before you know
-      it.
-      <br/>
-      Climbing gyms give you an enjoyable venue for social interaction with like-minded people. It's a place for trust building, camaraderie, and self confidence.
-<br/>
-This is a fun sport for everyone, from novice, sport, competitive, to professional climbers it's an amazing activity or even lifestyle.
-      <div className="source">
-    </p>
-    <button><a href="https://www.youtube.com/watch?v=Lb8QkUemXiM" target="blank">Check out some climbing tips</a></button>
-    <footer>
-        Source: <a href="https://www.indoorclimbing.com/" target="blank">Indoor Climbing</a> and <a href="https://unsplash.com/" target="_blank">Unsplash</a>.</div>
-        This page was coded by <a href="https://app.netlify.com/sites/cool-entremet-69e2c9/overview" target="_blank">Sarolta Hegyi </a> and has open source code on <a href="https://github.com/saroltah/Climbing-project" target="_blank">GitHub</a>.
-    </footer>
+    <button class="theme-button">Change theme</button>
+    <div class="content">
+      <h1>Indoor climbing</h1>
+      <h2>The most enjoyable and efficient sport</h2>
+      <div class="gallery">
+        <img src="src/climbing1.jpg" alt="" />
+        <img src="src/climbing2.jpg" alt="" />
+        <img src="src/climbing3.jpg" alt="" />
+        <img src="src/climbing4.jpg" alt="" />
+        <img src="src/climbing5.jpg" alt="" />
+        <img src="src/climbing6.jpg" alt="" />
+      </div>
+      <p>
+        As an exercise, you really can’t do better than climbing. Indoor
+        climbing will improve all aspects of your physical condition. You will
+        see improvement in your balance, flexibility, and agility and develop
+        both upper and lower body strength. Best of all, you will burn calories
+        at a higher rate than most strenuous workouts and will do it before you
+        know it.
+        <br />
+        Climbing gyms give you an enjoyable venue for social interaction with
+        like-minded people. It's a place for trust building, camaraderie, and
+        self confidence.
+        <br />
+        This is a fun sport for everyone, from novice, sport, competitive, to
+        professional climbers it's an amazing activity or even lifestyle.
+      </p>
+      <button class="check-out-button">
+        <a href="https://www.youtube.com/watch?v=Lb8QkUemXiM" target="blank"
+          >Check out some climbing tips</a
+        >
+      </button>
+      <footer>
+        Source:
+        <a href="https://www.indoorclimbing.com/" target="blank"
+          >Indoor Climbing</a
+        >
+        and <a href="https://unsplash.com/" target="_blank">Unsplash</a>.
+        <br />
+      </footer>
+    </div>
+    <div class="coded">
+      This page was coded by
+      <a
+        href="https://app.netlify.com/sites/cool-entremet-69e2c9/overview"
+        target="_blank"
+        >Sarolta Hegyi
+      </a>
+      and has open source code on
+      <a href="https://github.com/saroltah/Climbing-project" target="_blank"
+        >GitHub</a
+      >.
+    </div>
   </body>
 </html>
