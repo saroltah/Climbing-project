@@ -1,3 +1,6 @@
+:root {
+  --pink-color: #ba10db;
+}
 body {
   font-family: "Hind Madurai", sans-serif;
   text-align: center;
@@ -73,7 +76,7 @@ p {
 }
 
 .check-out-button a:hover {
-  color: #ba10db;
+  color: var(--pink-color);
 }
 footer {
   margin: 20px 0px;
@@ -83,7 +86,7 @@ footer {
 }
 footer a {
   text-decoration: none;
-  color: #ba10db;
+  color: var(--pink-color);
 }
 
 img {
@@ -93,11 +96,11 @@ img {
 }
 .small-img:hover {
   transform: scale(1.7);
-  border: 2px solid #ba10db;
+  border: 2px solid var(--pink-color);
 }
 .big-img:hover {
   transform: scale(1.2);
-  border: 2px solid #ba10db;
+  border: 2px solid var(--pink-color);
 }
 .first-image {
   width: 91%;
@@ -105,7 +108,7 @@ img {
 }
 .first-image:hover {
   transform: scale(1.1);
-  border: 2px solid #ba10db;
+  border: 2px solid var(--pink-color);
 }
 .gallery {
   display: grid;
@@ -156,7 +159,7 @@ img {
   color: white;
 }
 .dark .check-out-button a:hover {
-  color: #ba10db;
+  color: var(--pink-color);
 }
 .dark img {
   border: 2px solid white;
