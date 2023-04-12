@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Indoor climbing by Sarolta H</title>
   </head>
   <body>
@@ -29,12 +29,24 @@
       <h1>Indoor climbing</h1>
       <h2>The most enjoyable and efficient sport</h2>
 
-      <img src="src/climbing1.jpg" class="first-image" alt="climbing-image" />
+      <img
+        src="images/climbing1.jpg"
+        class="first-image"
+        alt="climbing-image"
+      />
       <div class="gallery">
-        <img class="small-img" src="src/climbing3.jpg" alt="climbing-image" />
-        <img class="small-img" src="src/climbing4.jpg" alt="climbing-image" />
-        <img class="big-img" src="src/climbing5.jpg" alt="climbing-image" />
-        <img class="big-img" src="src/climbing6.jpg" alt="climbing-image" />
+        <img
+          class="small-img"
+          src="images/climbing3.jpg"
+          alt="climbing-image"
+        />
+        <img
+          class="small-img"
+          src="images/climbing4.jpg"
+          alt="climbing-image"
+        />
+        <img class="big-img" src="images/climbing5.jpg" alt="climbing-image" />
+        <img class="big-img" src="images/climbing6.jpg" alt="climbing-image" />
       </div>
       <p>
         As an exercise, you really can’t do better than climbing. Indoor
@@ -88,17 +100,6 @@
         >.
       </footer>
     </div>
-    <script>
-      function changeTheme() {
-        let body = document.querySelector("body");
-        if (body.classList.contains("dark")) {
-          body.classList.remove("dark");
-        } else {
-          body.classList.add("dark");
-        }
-      }
-      let button = document.querySelector(".theme-button");
-      button.addEventListener("click", changeTheme);
-    </script>
+    <script src="src/index.js"></script>
   </body>
 </html>
